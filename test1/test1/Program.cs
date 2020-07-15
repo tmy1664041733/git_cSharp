@@ -10,35 +10,37 @@ namespace test1
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hollo World");
+            //int a,b;
+            //Console.WriteLine("输入一个数字a:");
+            //a = Convert.ToInt32(Console.ReadLine());
+            // Console.WriteLine("输入一个数字b:");
+            //b= Convert.ToInt32(Console.ReadLine());
+            //if (a > b)
+            //{
+            //    Console.WriteLine("a大于b");
+            //}else if(a<b)
+            //{
+            //    Console.WriteLine("a小于b");
+            //}
+            //else if (a == b)
+            //{
+            //    Console.WriteLine("a等于b");
+            //}
+            //Console.WriteLine("结果");
+            //Console.WriteLine("a=" + a);
+            //Console.WriteLine("b=" + b);
             //Console.ReadKey();
-            //double firstNumber;
-            //string userName;
-            int a,b;
-            Console.WriteLine("输入一个数字a:");
-            a = Convert.ToInt32(Console.ReadLine());
-             Console.WriteLine("输入一个数字b:");
-            b= Convert.ToInt32(Console.ReadLine());
-            if (a > b)
-            {
-                Console.WriteLine("a大于b");
-            }else if(a<b)
-            {
-                Console.WriteLine("a小于b");
-            }
-            else if (a == b)
-            {
-                Console.WriteLine("a等于b");
-            }
-            Console.WriteLine("结果");
-            Console.WriteLine("a=" + a);
-            Console.WriteLine("b=" + b);
-            Console.ReadKey();
-
-            //Console.WriteLine("userName:");
-            //userName = Console.ReadLine();
-            //Console.WriteLine(userName);
+            //int i;
+            //for (i = 1; i < 10; i++)
+            //{
+            //    Console.WriteLine("{0}",i);
+            //}
             //Console.ReadKey();
+            //三目运算符
+            int var1 = 7;
+            int var2 = 10;
+           
+          
         }
     }
 }
