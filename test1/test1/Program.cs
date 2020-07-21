@@ -71,14 +71,19 @@ namespace test1
             //route myRoute;
            // int myDirection = -1;
             //
-            string name = "张三";
-            int age = 30;
-            string email = "zhangsan@qq.com";
-            string address = "广州市";
-            decimal salary = 5000m;
-            Console.WriteLine("我叫"+name+",我住在"+address+",我今年"+age+"了，我的邮箱地址是"+email+",我的工资是"+salary+"元");
+            //string name = "张三";
+            //int age = 30;
+            //string email = "zhangsan@qq.com";
+            //string address = "广州市";
+            //decimal salary = 5000m;
+            //Console.WriteLine("我叫"+name+",我住在"+address+",我今年"+age+"了，我的邮箱地址是"+email+",我的工资是"+salary+"元");
+            //Console.ReadKey();
+            /***占位符的使用**/
+            int num1 = 10;
+            int num2 = 20;
+            int num3 = 30;
+            Console.WriteLine("第一个数字是{0}，第二个数字是{1}，第三个数字是{2}",num1,num2,num3);
             Console.ReadKey();
-
         }
     }
 }
