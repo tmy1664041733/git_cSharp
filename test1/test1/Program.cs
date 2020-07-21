@@ -99,6 +99,7 @@ namespace test1
             s2 = temp;
             Console.WriteLine("s1的值为{0}，s2的值为{1}",s1,s2);
             Console.ReadKey();
+            //
         }
     }
 }
