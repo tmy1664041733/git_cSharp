@@ -84,6 +84,13 @@ namespace test1
             int num3 = 30;
             Console.WriteLine("第一个数字是{0}，第二个数字是{1}，第三个数字是{2}",num1,num2,num3);
             Console.ReadKey();
+            /**定义4个变量存储姓名、性别、年龄、电话*/
+            string name = "张三";
+            char gender = '男';
+            int age = 30;
+            string tel = "15826798354";
+            Console.WriteLine("我的名字叫{0}，我是{1}生，我今年{2}岁，我的电话号码是{3}",name,gender,age,tel);
+            Console.ReadKey();
         }
     }
 }
