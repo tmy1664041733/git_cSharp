@@ -13,6 +13,11 @@ namespace test1
         east = 3,
         west = 4
     }
+    struct route
+    {
+        public orientation direction;
+        public double distance;
+    }
     class Program
     {
         static void Main(string[] args)
@@ -45,25 +50,35 @@ namespace test1
             //Console.ReadKey();
             //三目运算符
             //int var1 = 7;
-            //int var2 = 10;
-            double doubleVal = 99.999;
-            bool boolVal = true;
-            string stringResult;
-            //进行数据类型转换布尔类型和浮点型转化为字符型
-            stringResult = Convert.ToString(boolVal) + Convert.ToString(doubleVal);
-            Console.WriteLine("String:{0}+{1}={2}", boolVal, doubleVal, stringResult);
+            ////int var2 = 10;
+            //double doubleVal = 99.999;
+            //bool boolVal = true;
+            //string stringResult;
+            ////进行数据类型转换布尔类型和浮点型转化为字符型
+            //stringResult = Convert.ToString(boolVal) + Convert.ToString(doubleVal);
+            //Console.WriteLine("String:{0}+{1}={2}", boolVal, doubleVal, stringResult);
+            //Console.ReadKey();
+            ////枚举类型的使用
+            //orientation myDirection = orientation.north;
+            //Console.WriteLine("{0}", myDirection);
+            ////进行类型转换才能显示枚举的字符值
+            //string directionString;
+            //byte directionByte;
+            //directionByte = (byte)myDirection;
+            //directionString = Convert.ToString(myDirection);
+            //Console.WriteLine("{0},{1}", directionString, directionByte);
+            //Console.ReadKey();
+            //route myRoute;
+           // int myDirection = -1;
+            //
+            string name = "张三";
+            int age = 30;
+            string email = "zhangsan@qq.com";
+            string address = "广州市";
+            decimal salary = 5000m;
+            Console.WriteLine("我叫"+name+",我住在"+address+",我今年"+age+"了，我的邮箱地址是"+email+",我的工资是"+salary+"元");
             Console.ReadKey();
-            //枚举类型的使用
-            orientation myDirection = orientation.north;
-            Console.WriteLine("{0}", myDirection);
-            //进行类型转换才能显示枚举的字符值
-            string directionString;
-            byte directionByte;
-            directionByte = (byte)myDirection;
-            directionString = Convert.ToString(myDirection);
-            Console.WriteLine("{0},{1}", directionString, directionByte);
-            Console.ReadKey();
-          
+
         }
     }
 }
