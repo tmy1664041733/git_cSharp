@@ -91,6 +91,14 @@ namespace test1
             string tel = "15826798354";
             Console.WriteLine("我的名字叫{0}，我是{1}生，我今年{2}岁，我的电话号码是{3}",name,gender,age,tel);
             Console.ReadKey();
+            /*交换变量值*/
+            int s1 = 3;
+            int s2 = 10;
+            int temp = s1;
+            s1 = s2;
+            s2 = temp;
+            Console.WriteLine("s1的值为{0}，s2的值为{1}",s1,s2);
+            Console.ReadKey();
         }
     }
 }
