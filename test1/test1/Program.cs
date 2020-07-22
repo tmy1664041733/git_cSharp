@@ -99,7 +99,11 @@ namespace test1
             s2 = temp;
             Console.WriteLine("s1的值为{0}，s2的值为{1}",s1,s2);
             Console.ReadKey();
-            //
+            /**接收用户输入*/
+            Console.WriteLine("请输入姓名");
+            string sr = Console.ReadLine();
+            Console.WriteLine("我的名字是{0}", sr);
+            Console.ReadKey();
         }
     }
 }
