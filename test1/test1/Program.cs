@@ -104,6 +104,11 @@ namespace test1
             string sr = Console.ReadLine();
             Console.WriteLine("我的名字是{0}", sr);
             Console.ReadKey();
+            /**练习1*/
+            Console.WriteLine("小姐姐，那你喜欢吃什么水果");
+            string fruits = Console.ReadLine();
+            Console.WriteLine("我也喜欢吃{0}",fruits);
+            Console.ReadKey();
         }
     }
 }
