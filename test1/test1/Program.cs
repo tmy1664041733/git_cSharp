@@ -78,37 +78,49 @@ namespace test1
             //decimal salary = 5000m;
             //Console.WriteLine("我叫"+name+",我住在"+address+",我今年"+age+"了，我的邮箱地址是"+email+",我的工资是"+salary+"元");
             //Console.ReadKey();
-            /***占位符的使用**/
-            int num1 = 10;
-            int num2 = 20;
-            int num3 = 30;
-            Console.WriteLine("第一个数字是{0}，第二个数字是{1}，第三个数字是{2}",num1,num2,num3);
+            ///***占位符的使用**/
+            //int num1 = 10;
+            //int num2 = 20;
+            //int num3 = 30;
+            //Console.WriteLine("第一个数字是{0}，第二个数字是{1}，第三个数字是{2}",num1,num2,num3);
+            //Console.ReadKey();
+            ///**定义4个变量存储姓名、性别、年龄、电话*/
+            //string name = "张三";
+            //char gender = '男';
+            //int age = 30;
+            //string tel = "15826798354";
+            //Console.WriteLine("我的名字叫{0}，我是{1}生，我今年{2}岁，我的电话号码是{3}",name,gender,age,tel);
+            //Console.ReadKey();
+            ///*交换变量值*/
+            //int s1 = 3;
+            //int s2 = 10;
+            //int temp = s1;
+            //s1 = s2;
+            //s2 = temp;
+            //Console.WriteLine("s1的值为{0}，s2的值为{1}",s1,s2);
+            //Console.ReadKey();
+            ///**接收用户输入*/
+            //Console.WriteLine("请输入姓名");
+            //string sr = Console.ReadLine();
+            //Console.WriteLine("我的名字是{0}", sr);
+            //Console.ReadKey();
+            ///**练习1*/
+            //Console.WriteLine("小姐姐，那你喜欢吃什么水果");
+            //string fruits = Console.ReadLine();
+            //Console.WriteLine("我也喜欢吃{0}",fruits);
+            //Console.ReadKey();
+            /**转义字符**/
+            //  \n:表示换行
+            // \":表示英文的半角双引号
+            // \t:表示表示一个tab键的空格
+            // \b:表示退格键，放在字符的两边没有效果
+            // \r\n:windows操作系统只认识\r\n,不认识\n
+            // \\:表示一个\
+            // @ :01 取消\在字符串中的转义作用   02 保留字符串原格式输出
+            Console.WriteLine("今天天气很好\n我们去兜风");
+            Console.WriteLine("这是一个什么样的\"树\"");
             Console.ReadKey();
-            /**定义4个变量存储姓名、性别、年龄、电话*/
-            string name = "张三";
-            char gender = '男';
-            int age = 30;
-            string tel = "15826798354";
-            Console.WriteLine("我的名字叫{0}，我是{1}生，我今年{2}岁，我的电话号码是{3}",name,gender,age,tel);
-            Console.ReadKey();
-            /*交换变量值*/
-            int s1 = 3;
-            int s2 = 10;
-            int temp = s1;
-            s1 = s2;
-            s2 = temp;
-            Console.WriteLine("s1的值为{0}，s2的值为{1}",s1,s2);
-            Console.ReadKey();
-            /**接收用户输入*/
-            Console.WriteLine("请输入姓名");
-            string sr = Console.ReadLine();
-            Console.WriteLine("我的名字是{0}", sr);
-            Console.ReadKey();
-            /**练习1*/
-            Console.WriteLine("小姐姐，那你喜欢吃什么水果");
-            string fruits = Console.ReadLine();
-            Console.WriteLine("我也喜欢吃{0}",fruits);
-            Console.ReadKey();
+
         }
     }
 }
