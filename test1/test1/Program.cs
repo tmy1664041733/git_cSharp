@@ -117,10 +117,68 @@ namespace test1
             // \r\n:windows操作系统只认识\r\n,不认识\n
             // \\:表示一个\
             // @ :01 取消\在字符串中的转义作用   02 保留字符串原格式输出
-            Console.WriteLine("今天天气很好\n我们去兜风");
-            Console.WriteLine("这是一个什么样的\"树\"");
-            Console.ReadKey();
+            //Console.WriteLine("今天天气很好\n我们去兜风");
+            //Console.WriteLine("这是一个什么样的\"树\"");
+            //Console.ReadKey();
+            //一元+  - 运算符
+            //var ss = 5;
+            //var v1 = 10;
+            //ss = +v1;
+            //Console.WriteLine("一元运算符\"+\"ss = +v1的运算结果：ss={0},v1={1}", ss, v1);
+            //ss = -v1;
+            //Console.WriteLine("一元运算符\"-\"ss = -v1的运算结果：ss={0},v1={1}", ss, v1);
+            //Console.ReadKey();
+            ////一元运算符 ++ / --
+            //var num1 = 5;
+            //var num2 = 10;
+            //num1 = ++num2;
+            //Console.WriteLine("执行表达式num1 = ++ num2表达式后，num1的值={0},num2的值={1}",num1,num2);
+            //num1 = num2++;
+            //Console.WriteLine("执行表达式num1 =  num2++表达式后，num1的值={0},num2的值={1}", num1, num2);
+            //Console.ReadKey();
+            ///**if条件语句的使用*/
+            //var a = 4;
+            //var b = 5;
+            //if (a > b) {
+            //    Console.WriteLine("a的值为{0}",a);
+            //} else if(a<=b){
+            //    Console.WriteLine("b的值为{0}",b);           
+            //}
+            //Console.ReadKey();
+            //循环do while 
+            //int i=1;
+            //do
+            //{
+            //    Console.WriteLine("i的值为{0}", i++);
 
+            //} while (i < 1000);
+            //Console.ReadKey();
+            /**隐式类型转换**/
+            //满足隐式类型转换的条件：1 两种类型兼容  例如：int 和double 兼容（都是数字类型） 2 目标类型大于原类型 例如：double > int 小的转换为大的
+            //int c = 20;
+            //double s = c;
+            //Console.WriteLine("{0}",s);
+            //Console.ReadKey();
+            /**显示类型转换**/
+            //1、两种类型相兼容 int --- double
+            //2、大的转成小的  double  -- int 
+            //语法 :(要转换的类型)要转换的值  例如：int a = (int)s;
+            //double xx = 26.2;
+            //int ss = (int)xx;
+            //Console.WriteLine("{0}",ss);
+            //Console.ReadKey();
+            ////例子1
+            //int a = 20;
+            //int b = 6;
+            //double c = a / b;
+            //Console.WriteLine("{0}",c);
+            //Console.ReadKey();
+            ////例子2
+            //int dd = 30;
+            //int d = 20;
+            //double e = dd * 0.1 / d;
+            //Console.WriteLine("{0:0.0}",e);
+            //Console.ReadKey();
         }
     }
 }
