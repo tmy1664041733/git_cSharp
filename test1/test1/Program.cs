@@ -179,6 +179,51 @@ namespace test1
             //double e = dd * 0.1 / d;
             //Console.WriteLine("{0:0.0}",e);
             //Console.ReadKey();
+            /**计算118天是几周几天*/
+            //int totalday = 118;
+            //int week = totalday / 7;
+            //int day = totalday % 7;
+            //Console.WriteLine("{0}天是{1}周零{2}天",totalday,week,day);
+            //Console.ReadKey();
+            //如果两个类型之间不兼容，使用convert 进行转换
+            //string ss = "123";
+            //double r = Convert.ToDouble(ss);
+            //Console.WriteLine("{0}",r);
+            //Console.ReadKey();
+            //练习 读取用户输入的姓名，语文、数学、英语成绩  在控制台输出XX的总成绩是XX,平均成绩是XX
+            //Console.WriteLine("请输入姓名：");
+            //string name = Console.ReadLine();
+            //Console.WriteLine("请输入语文成绩");
+            //string strChinese = Console.ReadLine();
+            //Console.WriteLine("请输入数学成绩");
+            //string strMath = Console.ReadLine();
+            //Console.WriteLine("请输入英语成绩");
+            //string strEnglish = Console.ReadLine();
+            ////进行类型转换
+            //int chinese = Convert.ToInt32(strChinese);
+            //int math = Convert.ToInt32(strMath);
+            //int english = Convert.ToInt32(strEnglish);
+
+            //Console.WriteLine("{0}的总成绩为{1}，平均成绩为：{2}",name, chinese + math + english, (chinese + math + english)/3);
+            //Console.ReadKey();
+            //函数实现数据交换
+            int[] IntArray = { 1,2,8,10,50,34,47};
+            int dd = MaxValue(IntArray);
+            Console.WriteLine("输出数组的最大值：{0}",dd);
+            Console.ReadKey();
+
+
+        }
+        static int MaxValue(int[] IntArray)
+        {
+            int MaxVal = IntArray[0];
+            for (int i = 1; i < IntArray.Length; i++) {
+
+                if (MaxVal < IntArray[i]) {
+                    MaxVal = IntArray[i];
+                }
+            }
+            return MaxVal;
         }
     }
 }
