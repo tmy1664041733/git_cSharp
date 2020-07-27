@@ -207,13 +207,20 @@ namespace test1
             //Console.WriteLine("{0}的总成绩为{1}，平均成绩为：{2}",name, chinese + math + english, (chinese + math + english)/3);
             //Console.ReadKey();
             //函数实现数据交换
-            int[] IntArray = { 1,2,8,10,50,34,47};
-            int dd = MaxValue(IntArray);
-            Console.WriteLine("输出数组的最大值：{0}",dd);
+            //int[] IntArray = { 1,2,8,10,50,34,47};
+            //int dd = MaxValue(IntArray);
+            //Console.WriteLine("输出数组的最大值：{0}",dd);
+            //Console.ReadKey();
+            //参数数组的使用 
+            int sum = SumVals(1, 5, 9, 12, 52, 33);
+            Console.WriteLine("求和：{0}",sum);
             Console.ReadKey();
-
-
         }
+        /// <summary>
+        /// 进行数据交换
+        /// </summary>
+        /// <param name="IntArray">接收参数数组</param>
+        /// <returns></returns>
         static int MaxValue(int[] IntArray)
         {
             int MaxVal = IntArray[0];
@@ -224,6 +231,19 @@ namespace test1
                 }
             }
             return MaxVal;
+        }
+        /// <summary>
+        /// 进行求和运算
+        /// </summary>
+        /// <param name="vals"></param>
+        /// <returns></returns>
+        static int SumVals(params int[] vals) {
+            int sum = 0;
+            foreach (int val in vals)
+            { 
+                sum = sum + val;
+            }
+            return sum;
         }
     }
 }
