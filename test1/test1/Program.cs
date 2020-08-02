@@ -246,23 +246,34 @@ namespace test1
             //    Console.WriteLine("成绩为E");
             //}
             //Console.ReadKey();
-            //使用if-else-if语句比较三个数的大小
-            Console.WriteLine("请输入第一个数字");
-            int one = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("请输入第二个数字");
-            int two = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("请输入第三个数字");
-            int three = Convert.ToInt32(Console.ReadLine());
+            ////使用if-else-if语句比较三个数的大小
+            //Console.WriteLine("请输入第一个数字");
+            //int one = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("请输入第二个数字");
+            //int two = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("请输入第三个数字");
+            //int three = Convert.ToInt32(Console.ReadLine());
 
-            if (one > two && one > three) {
-                Console.WriteLine("最大值为{0}",one);
-            }else if(two > one && two > three){
-               Console.WriteLine("最大值为{0}", two);
+            //if (one > two && one > three) {
+            //    Console.WriteLine("最大值为{0}",one);
+            //}else if(two > one && two > three){
+            //   Console.WriteLine("最大值为{0}", two);
+            //}
+            //else if (three > one && three > two) {
+            //    Console.WriteLine("最大值为{0}", three);
+            //}
+            //Console.ReadKey();
+            //异常的捕获
+            Console.WriteLine("请输入一个值");
+            try {
+                int a = Convert.ToInt32(Console.ReadLine());
             }
-            else if (three > one && three > two) {
-                Console.WriteLine("最大值为{0}", three);
+            catch {
+                Console.WriteLine("输入的值类型不对");
+                Console.ReadKey();
             }
-            Console.ReadKey();
+
+            
         }
         /// <summary>
         /// 进行数据交换
