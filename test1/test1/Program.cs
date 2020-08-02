@@ -264,14 +264,42 @@ namespace test1
             //}
             //Console.ReadKey();
             //异常的捕获
-            Console.WriteLine("请输入一个值");
-            try {
-                int a = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("请输入一个值");
+            //try {
+            //    int a = Convert.ToInt32(Console.ReadLine());
+            //}
+            //catch {
+            //    Console.WriteLine("输入的值类型不对");
+            //    Console.ReadKey();
+            //}
+            //switch case 多条件选择语句的使用
+            //根据员工的年终评定结果：A （+1000）、B（+500）、C（+200）、D（0）、E（-500）发放奖金
+            //初始工资为5000
+            int salary = 5000;
+            bool flag = true;
+            Console.WriteLine("请输入员工的评定结果：");
+            string grade = Console.ReadLine();
+            switch (grade)
+            {
+                case "A": salary += 1000;
+                    break;
+                case "B": salary += 1000;
+                    break;
+                case "C": salary += 1000;
+                    break;
+                case "D": salary += 1000;
+                    break;
+                case "E": salary += 1000;
+                    break;
+                default:
+                    Console.WriteLine("输入错误，退出程序");
+                    flag = false;
+                    break;
             }
-            catch {
-                Console.WriteLine("输入的值类型不对");
-                Console.ReadKey();
+            if (flag) {
+                Console.WriteLine("员工等级为{0}，工资为：{1}", grade, salary);
             }
+            Console.ReadKey();
 
             
         }
