@@ -216,14 +216,51 @@ namespace test1
             //Console.WriteLine("求和：{0}",sum);
             //Console.ReadKey();
             //判断一个年份是否是闰年
-            int year = Convert.ToInt32(Console.ReadLine());
-            bool flag = (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
-            if (flag)
-            {
-                Console.WriteLine("{0}年是闰年", year);
+            //int year = Convert.ToInt32(Console.ReadLine());
+            //bool flag = (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
+            //if (flag)
+            //{
+            //    Console.WriteLine("{0}年是闰年", year);
+            //}
+            //else {
+            //    Console.WriteLine("{0}年不是闰年", year);
+            //}
+            //Console.ReadKey();
+            //if else 条件判断语句例子1
+            //Console.WriteLine("请输入成绩：");
+            //int score = Convert.ToInt32(Console.ReadLine());
+            //if (score >= 90) {
+            //    Console.WriteLine("成绩为A");
+            //}
+            //else if (score >= 80 && score < 90)
+            //{
+            //    Console.WriteLine("成绩为B");
+            //}else if(score >= 70 && score < 80){
+            //    Console.WriteLine("成绩为C");
+            //}
+            //else if (score >= 60 && score < 70) {
+            //    Console.WriteLine("成绩为D");
+            //}
+            //else if (score <60)
+            //{
+            //    Console.WriteLine("成绩为E");
+            //}
+            //Console.ReadKey();
+            //使用if-else-if语句比较三个数的大小
+            Console.WriteLine("请输入第一个数字");
+            int one = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("请输入第二个数字");
+            int two = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("请输入第三个数字");
+            int three = Convert.ToInt32(Console.ReadLine());
+
+            if (one > two && one > three) {
+                Console.WriteLine("最大值为{0}",one);
+            }else if(two > one && two > three){
+               Console.WriteLine("最大值为{0}", two);
             }
-            else {
-                Console.WriteLine("{0}年不是闰年", year);
+            else if (three > one && three > two) {
+                Console.WriteLine("最大值为{0}", three);
             }
             Console.ReadKey();
         }
