@@ -211,9 +211,20 @@ namespace test1
             //int dd = MaxValue(IntArray);
             //Console.WriteLine("输出数组的最大值：{0}",dd);
             //Console.ReadKey();
-            //参数数组的使用 
-            int sum = SumVals(1, 5, 9, 12, 52, 33);
-            Console.WriteLine("求和：{0}",sum);
+            ////参数数组的使用 
+            //int sum = SumVals(1, 5, 9, 12, 52, 33);
+            //Console.WriteLine("求和：{0}",sum);
+            //Console.ReadKey();
+            //判断一个年份是否是闰年
+            int year = Convert.ToInt32(Console.ReadLine());
+            bool flag = (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
+            if (flag)
+            {
+                Console.WriteLine("{0}年是闰年", year);
+            }
+            else {
+                Console.WriteLine("{0}年不是闰年", year);
+            }
             Console.ReadKey();
         }
         /// <summary>
@@ -241,7 +252,7 @@ namespace test1
             int sum = 0;
             foreach (int val in vals)
             { 
-                sum = sum + val;
+                sum += val;
             }
             return sum;
         }
