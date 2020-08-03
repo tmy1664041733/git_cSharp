@@ -275,32 +275,63 @@ namespace test1
             //switch case 多条件选择语句的使用
             //根据员工的年终评定结果：A （+1000）、B（+500）、C（+200）、D（0）、E（-500）发放奖金
             //初始工资为5000
-            int salary = 5000;
-            bool flag = true;
-            Console.WriteLine("请输入员工的评定结果：");
-            string grade = Console.ReadLine();
-            switch (grade)
-            {
-                case "A": salary += 1000;
+            //int salary = 5000;
+            //bool flag = true;
+            //Console.WriteLine("请输入员工的评定结果：");
+            //string grade = Console.ReadLine();
+            //switch (grade)
+            //{
+            //    case "A": salary += 1000;
+            //        break;
+            //    case "B": salary += 1000;
+            //        break;
+            //    case "C": salary += 1000;
+            //        break;
+            //    case "D": salary += 1000;
+            //        break;
+            //    case "E": salary += 1000;
+            //        break;
+            //    default:
+            //        Console.WriteLine("输入错误，退出程序");
+            //        flag = false;
+            //        break;
+            //}
+            //if (flag) {
+            //    Console.WriteLine("员工等级为{0}，工资为：{1}", grade, salary);
+            //}
+            //Console.ReadKey();
+            //请用户输入年份，在输入月份，输出该月的天数（结合判断闰年来做）
+            Console.WriteLine("请输入年份数据：");
+            int year = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("请输入月份数据：");
+            int month = Convert.ToInt32(Console.ReadLine());
+            int day;
+            switch(month){
+                case 1: 
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12: day = 31; break;
+                case 2: 
+                    //2月有平年和闰年的区别
+                    if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+                    {
+                        day = 29;
+                    }
+                    else {
+                        day = 28;
+                    };
                     break;
-                case "B": salary += 1000;
-                    break;
-                case "C": salary += 1000;
-                    break;
-                case "D": salary += 1000;
-                    break;
-                case "E": salary += 1000;
-                    break;
-                default:
-                    Console.WriteLine("输入错误，退出程序");
-                    flag = false;
-                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                default :day = 30;break;
             }
-            if (flag) {
-                Console.WriteLine("员工等级为{0}，工资为：{1}", grade, salary);
-            }
+            Console.WriteLine("{0}年{1}月有{2}天",year,month,day);
             Console.ReadKey();
-
             
         }
         /// <summary>
