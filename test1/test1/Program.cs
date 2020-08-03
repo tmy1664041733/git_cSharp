@@ -302,35 +302,57 @@ namespace test1
             //Console.ReadKey();
             //请用户输入年份，在输入月份，输出该月的天数（结合判断闰年来做）
             Console.WriteLine("请输入年份数据：");
-            int year = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("请输入月份数据：");
-            int month = Convert.ToInt32(Console.ReadLine());
-            int day;
-            switch(month){
-                case 1: 
-                case 3:
-                case 5:
-                case 7:
-                case 8:
-                case 10:
-                case 12: day = 31; break;
-                case 2: 
-                    //2月有平年和闰年的区别
-                    if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+            try
+            {
+                int year = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("请输入月份数据：");
+                try
+                {
+                    int month = Convert.ToInt32(Console.ReadLine());
+                    int day;
+                    if (month >= 1 && month <= 12)
                     {
-                        day = 29;
+                        switch (month)
+                        {
+                            case 1:
+                            case 3:
+                            case 5:
+                            case 7:
+                            case 8:
+                            case 10:
+                            case 12: day = 31; break;
+                            case 2:
+                                //2月有平年和闰年的区别
+                                if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+                                {
+                                    day = 29;
+                                }
+                                else
+                                {
+                                    day = 28;
+                                };
+                                break;
+                            case 4:
+                            case 6:
+                            case 9:
+                            case 11:
+                            default: day = 30; break;
+                        }
+                        Console.WriteLine("{0}年{1}月有{2}天", year, month, day);
                     }
                     else {
-                        day = 28;
-                    };
-                    break;
-                case 4:
-                case 6:
-                case 9:
-                case 11:
-                default :day = 30;break;
+                        Console.WriteLine("输入的月份格式不对，退出程序");
+                    }
+                }//判断月份的try配对
+                catch {
+                    Console.WriteLine("输入的月份份数据有误，退出程序");
+                }
+               
+            }//判断年份的try配对
+            catch
+            {
+                Console.WriteLine("输入的年份数据有误，退出程序");
             }
-            Console.WriteLine("{0}年{1}月有{2}天",year,month,day);
             Console.ReadKey();
             
         }
