@@ -358,13 +358,26 @@ namespace test1
             //while循环
             //通过while循环在控制台输入1000遍，为梦想加油！
             //定义计数变量i
-            int i = 0;
-            //进行while条件判断
-            while(i<1000){
-                Console.WriteLine("{0}为梦想加油！",i);
-                i++;
-            }
-            Console.ReadKey();
+            //int i = 0;
+            ////进行while条件判断
+            //while(i<1000){
+            //    Console.WriteLine("{0}为梦想加油！",i);
+            //    i++;
+            //}
+            //Console.ReadKey();
+            //求1-100所有整数的和
+            //循环体：累计计数
+            //循环条件：i<=100
+            //int i = 1;
+            //int sum = 0;
+            //while(i<=100){
+            //    sum += i;
+            //    i++;
+            //}
+            //Console.WriteLine("1-100的和为{0}",sum);
+            //Console.ReadKey();
+            //求1-100偶数的和
+
         }
         /// <summary>
         /// 进行数据交换
