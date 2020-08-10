@@ -1,0 +1,6 @@
+C:\gitrepository\git_cSharp\CsharpBase\CsharpBase\CsharpBase\bin\Debug\CsharpBase.exe.config
+C:\gitrepository\git_cSharp\CsharpBase\CsharpBase\CsharpBase\bin\Debug\CsharpBase.exe
+C:\gitrepository\git_cSharp\CsharpBase\CsharpBase\CsharpBase\bin\Debug\CsharpBase.pdb
+C:\gitrepository\git_cSharp\CsharpBase\CsharpBase\CsharpBase\obj\Debug\CsharpBase.csprojResolveAssemblyReference.cache
+C:\gitrepository\git_cSharp\CsharpBase\CsharpBase\CsharpBase\obj\Debug\CsharpBase.exe
+C:\gitrepository\git_cSharp\CsharpBase\CsharpBase\CsharpBase\obj\Debug\CsharpBase.pdb
