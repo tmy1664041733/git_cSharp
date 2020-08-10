@@ -1,0 +1,9 @@
+C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\bin\Debug\zengshangaicaozuo.exe.config
+C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\bin\Debug\zengshangaicaozuo.exe
+C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\bin\Debug\zengshangaicaozuo.pdb
+C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\obj\Debug\zengshangaicaozuo.csprojResolveAssemblyReference.cache
+C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\obj\Debug\zengshangaicaozuo.Form1.resources
+C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\obj\Debug\zengshangaicaozuo.Properties.Resources.resources
+C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\obj\Debug\zengshangaicaozuo.csproj.GenerateResource.Cache
+C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\obj\Debug\zengshangaicaozuo.exe
+C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\obj\Debug\zengshangaicaozuo.pdb

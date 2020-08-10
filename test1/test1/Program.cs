@@ -377,6 +377,23 @@ namespace test1
             //Console.WriteLine("1-100的和为{0}",sum);
             //Console.ReadKey();
             //求1-100偶数的和
+            int i = 1;//定义计数变量
+            int sum = 0;//存放偶数和
+            int sum1 = 0;//存放奇数和
+            while(i<=100){
+                if (i % 2 == 0)//判断计数变量是否为偶数
+                {
+                    sum += i;
+                }
+                else if(i % 2 != 0)//判断计数变量是否为奇数
+                { 
+                    sum1+=i;
+                }
+                i++;
+            }
+            Console.WriteLine("1-100偶数的和为{0}\n1-100奇数和为{1}",sum,sum1);
+            Console.ReadKey();
+
 
         }
         /// <summary>
