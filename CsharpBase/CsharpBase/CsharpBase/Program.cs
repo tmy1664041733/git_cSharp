@@ -35,23 +35,33 @@ namespace CsharpBase
             //知道学生会或者老师讲了10遍还是不会，都要放学
             //循环体：接收学生的输入
             //循环条件：放学条件为：学生会了或者老师讲了10遍
-            string answer ="";
-            int i = 1;
+            //string answer ="";
+            //int i = 1;
          
-                while (i <= 3 && answer != "y")
-                {
-                    Console.WriteLine("第{0}遍这道题你会了吗？",i);
-                    answer = Console.ReadLine();
-                    if (answer=="y")
-                    {
-                        Console.WriteLine("放学了");
-                        break;
-                    }
-                    i++;
-                }
-          
-               
-                Console.ReadKey();
+            //    while (i <= 3 && answer != "y")
+            //    {
+            //        Console.WriteLine("第{0}遍这道题你会了吗？",i);
+            //        answer = Console.ReadLine();
+            //        if (answer=="y")
+            //        {
+            //            Console.WriteLine("放学了");
+            //            break;
+            //        }
+            //        i++;
+            //    }
+            //    Console.ReadKey();
+            //2006年培养学员80000人，每年增长25%
+            //请问按照这种增长速度，那年人数会达到20万
+            //循环条件：people >=200000
+            //循环体：每年增加25%
+            double people = 80000;
+            int year = 2006;
+            while (people <= 200000) {
+                people *= 1.25;
+                year++;
+            }
+            Console.WriteLine("{0}人数会达到20万",year);
+            Console.ReadKey();
           
             
            
