@@ -38,18 +38,19 @@ namespace CsharpBase
             string answer ="";
             int i = 1;
          
-                while (i <= 3 && answer == "n")
+                while (i <= 3 && answer != "y")
                 {
                     Console.WriteLine("第{0}遍这道题你会了吗？",i);
                     answer = Console.ReadLine();
-                    if (i == 3)
+                    if (answer=="y")
                     {
-                        answer = "y";
+                        Console.WriteLine("放学了");
+                        break;
                     }
                     i++;
                 }
           
-                Console.WriteLine("放学了");
+               
                 Console.ReadKey();
           
             
