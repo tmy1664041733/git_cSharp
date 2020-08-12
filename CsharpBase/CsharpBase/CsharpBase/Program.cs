@@ -54,20 +54,52 @@ namespace CsharpBase
             //请问按照这种增长速度，那年人数会达到20万
             //循环条件：people >=200000
             //循环体：每年增加25%
-            double people = 80000;
-            int year = 2006;
-            while (people <= 200000) {
-                people *= 1.25;
-                year++;
-            }
-            Console.WriteLine("{0}人数会达到20万",year);
+            //double people = 80000;
+            //int year = 2006;
+            //while (people <= 200000) {
+            //    people *= 1.25;
+            //    year++;
+            //}
+            //Console.WriteLine("{0}人数会达到20万",year);
+            //Console.ReadKey();
+            ////通过函数返回一个数组中的最大值
+            // int[] myList = {1,2,85,47,55,17,64,32,66,105,99,33,20};
+                  
+            //      int Max = MaxVal(myList);
+            //      Console.WriteLine("最大值为：{0}",Max);
+            //      Console.ReadKey();
+            //通过params参数接收可变参数，进行累加计算
+            int sum = SumVal(1,5,52,60,14,52,66,8);
+            Console.WriteLine("累加值为{0}",sum);
             Console.ReadKey();
-          
-            
-           
+        }
+        /// <summary>
+        /// 返回整型数组中的最大值
+        /// </summary>
+        /// <param name="intArray"></param>
+        /// <returns></returns>
+        //static int MaxVal(int[] intArray) {
+        //    int Max = intArray[0];
+        //    for (int i = 1; i < intArray.Length; i++) {
+        //        if (Max < intArray[i]) {
 
-
-
+        //            Max = intArray[i];
+        //        }
+        //    }
+        //    return Max;
+        //}
+        /// <summary>
+        /// 使用params参数接收个数不定的参数
+        /// </summary>
+        /// <param name="vals"></param>
+        /// <returns></returns>
+        static int SumVal(params int[] vals) {
+            int sum = 0;
+            foreach(int val in vals){
+                sum += val;
+            }
+            return sum;
+        
         }
     }
 }
