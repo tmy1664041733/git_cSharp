@@ -69,8 +69,13 @@ namespace CsharpBase
             //      Console.WriteLine("最大值为：{0}",Max);
             //      Console.ReadKey();
             //通过params参数接收可变参数，进行累加计算
-            int sum = SumVal(1,5,52,60,14,52,66,8);
-            Console.WriteLine("累加值为{0}",sum);
+            //int sum = SumVal(1,5,52,60,14,52,66,8);
+            //Console.WriteLine("累加值为{0}",sum);
+            //Console.ReadKey();
+            //通过引用来调用参数
+           int mylist = 5;
+            int ss = Val(ref mylist);
+            Console.WriteLine("ss的值为：{0},mylist值为：{1}",ss,mylist);
             Console.ReadKey();
         }
         /// <summary>
@@ -78,16 +83,19 @@ namespace CsharpBase
         /// </summary>
         /// <param name="intArray"></param>
         /// <returns></returns>
-        //static int MaxVal(int[] intArray) {
-        //    int Max = intArray[0];
-        //    for (int i = 1; i < intArray.Length; i++) {
-        //        if (Max < intArray[i]) {
+        static int MaxVal(int[] intArray)
+        {
+            int Max = intArray[0];
+            for (int i = 1; i < intArray.Length; i++)
+            {
+                if (Max < intArray[i])
+                {
 
-        //            Max = intArray[i];
-        //        }
-        //    }
-        //    return Max;
-        //}
+                    Max = intArray[i];
+                }
+            }
+            return Max;
+        }
         /// <summary>
         /// 使用params参数接收个数不定的参数
         /// </summary>
@@ -100,6 +108,16 @@ namespace CsharpBase
             }
             return sum;
         
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="val"></param>
+        /// <returns></returns>
+        static int Val(ref int val) {
+            val = val * 2;
+            return val;
+           
         }
     }
 }
