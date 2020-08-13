@@ -73,10 +73,10 @@ namespace CsharpBase
             //Console.WriteLine("累加值为{0}",sum);
             //Console.ReadKey();
             //通过引用来调用参数
-           int mylist = 5;
-            int ss = Val(ref mylist);
-            Console.WriteLine("ss的值为：{0},mylist值为：{1}",ss,mylist);
-            Console.ReadKey();
+           //int mylist = 5;
+           // int ss = Val(ref mylist);
+           // Console.WriteLine("ss的值为：{0},mylist值为：{1}",ss,mylist);
+           // Console.ReadKey();
         }
         /// <summary>
         /// 返回整型数组中的最大值
@@ -110,7 +110,7 @@ namespace CsharpBase
         
         }
         /// <summary>
-        /// 
+        /// 传入引用参数
         /// </summary>
         /// <param name="val"></param>
         /// <returns></returns>

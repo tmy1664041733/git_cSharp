@@ -38,16 +38,16 @@ namespace zengshangaicaozuo
         /// <returns></returns>
         public static DataSet ExecuteDataSet(string sql)
         {
-            using (SqlConnection xonn = new SqlConnection(connStr))
+            using (SqlConnection xonn = new SqlConnection(connStr))//定义连接对象
             {
-                xonn.Open();
-                using (SqlCommand cmd = xonn.CreateCommand())
+                xonn.Open();//打开数据库连接
+                using (SqlCommand cmd = xonn.CreateCommand())//创建一个执行sql对象
                 {
-                    cmd.CommandText = sql;
-                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                    DataSet dataset = new DataSet();
-                    adapter.Fill(dataset);
-                    return dataset;
+                    cmd.CommandText = sql;//把sql语句赋值给sql对象
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);//执行连接
+                    DataSet dataset = new DataSet();//定义存储查询结果的容器
+                    adapter.Fill(dataset);//将数据存储到数据容器
+                    return dataset;//输出数据查询
                 }
             }
         }
