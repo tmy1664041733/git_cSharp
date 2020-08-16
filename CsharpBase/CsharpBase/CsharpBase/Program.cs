@@ -80,13 +80,23 @@ namespace CsharpBase
             //三元表达式的使用
             //语法：表达式1？表达式2：表达式3；
             //使用三元表达式计算两个数的最大值
-            Console.WriteLine("请输入第一个数");
-            int num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("请输入第二个数");
-            int num2 = Convert.ToInt32(Console.ReadLine());
-            int max = num1 > num2 ? num1 : num2;
-            Console.WriteLine("最大值为{0}",max);
-            Console.ReadKey();
+            //Console.WriteLine("请输入第一个数");
+            //int num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("请输入第二个数");
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+            //int max = num1 > num2 ? num1 : num2;
+            //Console.WriteLine("最大值为{0}",max);
+            //Console.ReadKey();
+            //创建随机数对象
+            Random r = new Random();
+            //随机数对象调用方法产生随机数
+            //int rNumber = r.Next(1,10);//产生  大于等于1，小于10的随机数
+            while (true) {
+                int rNumber = r.Next(1, 10);//产生  大于等于1，小于10的随机数
+                Console.WriteLine(rNumber);
+                Console.ReadKey();
+            }
+           
         }
         /// <summary>
         /// 返回整型数组中的最大值
