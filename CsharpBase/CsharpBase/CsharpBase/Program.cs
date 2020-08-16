@@ -87,13 +87,58 @@ namespace CsharpBase
             //int max = num1 > num2 ? num1 : num2;
             //Console.WriteLine("最大值为{0}",max);
             //Console.ReadKey();
-            //创建随机数对象
+            ////创建随机数对象
+            //Random r = new Random();
+            ////随机数对象调用方法产生随机数
+            ////int rNumber = r.Next(1,10);//产生  大于等于1，小于10的随机数
+            //while (true) {
+            //    int rNumber = r.Next(1, 10);//产生  大于等于1，小于10的随机数
+            //    Console.WriteLine(rNumber);
+            //    Console.ReadKey();
+            //}
+            //使用随机数计算一个人上辈子
+            //1创建一个随机数对象
             Random r = new Random();
-            //随机数对象调用方法产生随机数
-            //int rNumber = r.Next(1,10);//产生  大于等于1，小于10的随机数
-            while (true) {
-                int rNumber = r.Next(1, 10);//产生  大于等于1，小于10的随机数
-                Console.WriteLine(rNumber);
+            //2随机数对象调用方法,生成1-7的随机数
+            while (true)
+            {
+                int rNumber = r.Next(1, 8);
+                //
+                Console.WriteLine("请输入姓名：");
+                string name = Console.ReadLine();
+                switch (rNumber)
+                {
+                    case 1:
+                        Console.WriteLine("{0}上辈子是土豪", name);
+                        break;
+                    case 2:
+                        Console.WriteLine("{0}上辈子是乞丐", name);
+                        break;
+                    case 3:
+                        Console.WriteLine("{0}上辈子是大官", name);
+                        break;
+                    case 4:
+                        Console.WriteLine("{0}上辈子是皇帝", name);
+                        break;
+                    case 5:
+                        Console.WriteLine("{0}上辈子是和尚", name);
+                        break;
+                    case 6:
+                        Console.WriteLine("{0}上辈子是普通人", name);
+                        break;
+                    case 7:
+                        Console.WriteLine("{0}上辈子是妓女", name);
+                        break;
+                    case 8:
+                        Console.WriteLine("{0}上辈子是龟公", name);
+                        break;
+                    case 9:
+                        Console.WriteLine("{0}上辈子是司机", name);
+                        break;
+                    case 10:
+                        Console.WriteLine("{0}上辈子是程序员", name);
+                        break;
+                }
                 Console.ReadKey();
             }
            
