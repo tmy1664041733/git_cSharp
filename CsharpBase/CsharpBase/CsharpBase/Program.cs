@@ -77,6 +77,16 @@ namespace CsharpBase
            // int ss = Val(ref mylist);
            // Console.WriteLine("ss的值为：{0},mylist值为：{1}",ss,mylist);
            // Console.ReadKey();
+            //三元表达式的使用
+            //语法：表达式1？表达式2：表达式3；
+            //使用三元表达式计算两个数的最大值
+            Console.WriteLine("请输入第一个数");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("请输入第二个数");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int max = num1 > num2 ? num1 : num2;
+            Console.WriteLine("最大值为{0}",max);
+            Console.ReadKey();
         }
         /// <summary>
         /// 返回整型数组中的最大值
