@@ -12,6 +12,13 @@ namespace CsharpBase
        男,
        女
     }
+    //
+    public enum state
+    { 
+         one,
+         two,
+        three
+    }
     class Program
     {
         static void Main(string[] args)
@@ -150,7 +157,7 @@ namespace CsharpBase
             //常量的定义方法
             //声明的语法：
             // const 变量类型 变量名= 值;
-            const int number = 60;//常量不能被重新赋值
+           // const int number = 60;//常量不能被重新赋值
             //枚举的使用
             //语法：
             //[public] enum  枚举名
@@ -161,10 +168,19 @@ namespace CsharpBase
             //public 访问修饰符  表示公开的，谁都可以访问
             //enum 声明枚举的关键字
             //将枚举声明在命名空间的下面，类的外面，表示在这个命名空间下，所有的类都可以使用这个枚举。
-            Gender g = Gender.男;
-            Console.WriteLine("你的性别是{0}",g);
+            //Gender g = Gender.男;
+            //Console.WriteLine("你的性别是{0}",g);
+            //Console.ReadKey();
+            //枚举类型默认可以转换为int类型
+            state s = state.one;
+            int c = (int)s;
+            Console.WriteLine("{0}",c);
             Console.ReadKey();
-
+            //int类型转换为枚举类型
+            int t = 2;
+            state t1 = (state)t;
+            Console.WriteLine("{0}",t1);
+            Console.ReadKey();
         }
         /// <summary>
         /// 返回整型数组中的最大值
