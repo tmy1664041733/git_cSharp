@@ -15,7 +15,7 @@ namespace CsharpBase
     //
     public enum state
     { 
-         one,
+         one=1,
          two,
         three
     }
@@ -181,6 +181,40 @@ namespace CsharpBase
             state t1 = (state)t;
             Console.WriteLine("{0}",t1);
             Console.ReadKey();
+            //所有类型都能转换为string类型
+            #region 枚举类型转换成字符串
+            string cc = s.ToString();
+            Console.WriteLine("{0}",cc);
+            Console.ReadKey();
+            #endregion
+            #region 字符串转换为枚举类型
+            string rr = "0";
+            state dd = (state)Enum.Parse(typeof(state),rr);
+            #endregion
+            //枚举类型默认和 int类型兼容，所以可以通过强制类型转换进行互相转换，
+            //当转换一个枚举中没有的值的时候，不会抛出异常，而是直接将数字显示出来
+            //枚举同样可以和string类型进行互相转换，如果将枚举类型转换为string类型，则直接调用ToString()
+            //如果将字符串转换成枚举类型则需要下面一行代码：
+            //(要转换的枚举类型)Enum.Parse(typeof(要转换的枚举类型),"要转换的字符串");
+            //如果要转换的字符串是数字，则就算枚举中没有，也不会抛异常。
+            //如果转换的字符串是文本，如果枚举中没有则会抛出异常
+            //使用枚举类型实现接受用户输入的数字，输入枚举的英文字符
+            Console.WriteLine("请输入：1--one  ,2--two ,3-three");
+           string input= Console.ReadLine();
+            switch(input){
+                case "1": state s1 = (state)Enum.Parse(typeof(state),input);
+                        Console.WriteLine("{0}",s1);
+                        Console.ReadKey();
+                         break;
+                case "2": state s2 = (state)Enum.Parse(typeof(state), input);
+                     Console.WriteLine("{0}",s2);
+                        Console.ReadKey();
+                         break;
+                case "3": state s3 = (state)Enum.Parse(typeof(state), input);
+                     Console.WriteLine("{0}",s3);
+                        Console.ReadKey();
+                         break;
+            }
         }
         /// <summary>
         /// 返回整型数组中的最大值
