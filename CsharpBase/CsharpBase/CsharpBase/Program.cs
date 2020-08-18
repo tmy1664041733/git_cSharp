@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace CsharpBase
 {
+    //声明一个枚举类型变量
+    public enum Gender
+    { 
+       男,
+       女
+    }
     class Program
     {
         static void Main(string[] args)
@@ -37,7 +43,7 @@ namespace CsharpBase
             //循环条件：放学条件为：学生会了或者老师讲了10遍
             //string answer ="";
             //int i = 1;
-         
+
             //    while (i <= 3 && answer != "y")
             //    {
             //        Console.WriteLine("第{0}遍这道题你会了吗？",i);
@@ -64,7 +70,7 @@ namespace CsharpBase
             //Console.ReadKey();
             ////通过函数返回一个数组中的最大值
             // int[] myList = {1,2,85,47,55,17,64,32,66,105,99,33,20};
-                  
+
             //      int Max = MaxVal(myList);
             //      Console.WriteLine("最大值为：{0}",Max);
             //      Console.ReadKey();
@@ -73,10 +79,10 @@ namespace CsharpBase
             //Console.WriteLine("累加值为{0}",sum);
             //Console.ReadKey();
             //通过引用来调用参数
-           //int mylist = 5;
-           // int ss = Val(ref mylist);
-           // Console.WriteLine("ss的值为：{0},mylist值为：{1}",ss,mylist);
-           // Console.ReadKey();
+            //int mylist = 5;
+            // int ss = Val(ref mylist);
+            // Console.WriteLine("ss的值为：{0},mylist值为：{1}",ss,mylist);
+            // Console.ReadKey();
             //三元表达式的使用
             //语法：表达式1？表达式2：表达式3；
             //使用三元表达式计算两个数的最大值
@@ -97,51 +103,68 @@ namespace CsharpBase
             //    Console.ReadKey();
             //}
             //使用随机数计算一个人上辈子
-            //1创建一个随机数对象
-            Random r = new Random();
-            //2随机数对象调用方法,生成1-7的随机数
-            while (true)
-            {
-                int rNumber = r.Next(1, 8);
-                //
-                Console.WriteLine("请输入姓名：");
-                string name = Console.ReadLine();
-                switch (rNumber)
-                {
-                    case 1:
-                        Console.WriteLine("{0}上辈子是土豪", name);
-                        break;
-                    case 2:
-                        Console.WriteLine("{0}上辈子是乞丐", name);
-                        break;
-                    case 3:
-                        Console.WriteLine("{0}上辈子是大官", name);
-                        break;
-                    case 4:
-                        Console.WriteLine("{0}上辈子是皇帝", name);
-                        break;
-                    case 5:
-                        Console.WriteLine("{0}上辈子是和尚", name);
-                        break;
-                    case 6:
-                        Console.WriteLine("{0}上辈子是普通人", name);
-                        break;
-                    case 7:
-                        Console.WriteLine("{0}上辈子是妓女", name);
-                        break;
-                    case 8:
-                        Console.WriteLine("{0}上辈子是龟公", name);
-                        break;
-                    case 9:
-                        Console.WriteLine("{0}上辈子是司机", name);
-                        break;
-                    case 10:
-                        Console.WriteLine("{0}上辈子是程序员", name);
-                        break;
-                }
-                Console.ReadKey();
-            }
-           
+            ////1创建一个随机数对象
+            //Random r = new Random();
+            ////2随机数对象调用方法,生成1-7的随机数
+            //while (true)
+            //{
+            //    int rNumber = r.Next(1, 8);
+            //    //
+            //    Console.WriteLine("请输入姓名：");
+            //    string name = Console.ReadLine();
+            //    switch (rNumber)
+            //    {
+            //        case 1:
+            //            Console.WriteLine("{0}上辈子是土豪", name);
+            //            break;
+            //        case 2:
+            //            Console.WriteLine("{0}上辈子是乞丐", name);
+            //            break;
+            //        case 3:
+            //            Console.WriteLine("{0}上辈子是大官", name);
+            //            break;
+            //        case 4:
+            //            Console.WriteLine("{0}上辈子是皇帝", name);
+            //            break;
+            //        case 5:
+            //            Console.WriteLine("{0}上辈子是和尚", name);
+            //            break;
+            //        case 6:
+            //            Console.WriteLine("{0}上辈子是普通人", name);
+            //            break;
+            //        case 7:
+            //            Console.WriteLine("{0}上辈子是妓女", name);
+            //            break;
+            //        case 8:
+            //            Console.WriteLine("{0}上辈子是龟公", name);
+            //            break;
+            //        case 9:
+            //            Console.WriteLine("{0}上辈子是司机", name);
+            //            break;
+            //        case 10:
+            //            Console.WriteLine("{0}上辈子是程序员", name);
+            //            break;
+            //    }
+            //    Console.ReadKey();
+            //}
+            //常量的定义方法
+            //声明的语法：
+            // const 变量类型 变量名= 值;
+            const int number = 60;//常量不能被重新赋值
+            //枚举的使用
+            //语法：
+            //[public] enum  枚举名
+            //{ 
+            //    值1,
+            //    值2,
+            //}
+            //public 访问修饰符  表示公开的，谁都可以访问
+            //enum 声明枚举的关键字
+            //将枚举声明在命名空间的下面，类的外面，表示在这个命名空间下，所有的类都可以使用这个枚举。
+            Gender g = Gender.男;
+            Console.WriteLine("你的性别是{0}",g);
+            Console.ReadKey();
+
         }
         /// <summary>
         /// 返回整型数组中的最大值
