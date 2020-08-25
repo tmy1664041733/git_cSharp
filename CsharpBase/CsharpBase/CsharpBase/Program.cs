@@ -236,21 +236,29 @@ namespace CsharpBase
             //    Console.WriteLine("{0}",nums[i]);
             //}
             //Console.ReadKey();
-            //定义一个数组，找出数组中得最大值了最小值，以及平均值
-            int[] nums = { 1, 2, 2, 20, 16, 17, 33, 17, 3, 9, 8, 10 };
-            int max = nums[0];
-            int min = nums[0];
-            int sum = 0;
-            for (int i = 0; i < nums.Length; i++) {
-                if (nums[i] > max) {
-                    max = nums[i];
-                }
-                if (nums[i] < min) {
-                    min = nums[i];
-                }
-                sum = sum + nums[i];
+            ////定义一个数组，找出数组中得最大值了最小值，以及平均值
+            //int[] nums = { 1, 2, 2, 20, 16, 17, 33, 17, 3, 9, 8, 10 };
+            //int max = nums[0];
+            //int min = nums[0];
+            //int sum = 0;
+            //for (int i = 0; i < nums.Length; i++) {
+            //    if (nums[i] > max) {
+            //        max = nums[i];
+            //    }
+            //    if (nums[i] < min) {
+            //        min = nums[i];
+            //    }
+            //    sum = sum + nums[i];
+            //}
+            //Console.WriteLine("nums数组的最大值为：{0}最小值为：{1}，平均值为：{2}",max,min,sum/nums.Length);
+            //Console.ReadKey();
+            //给出一个字符串数组，使用|进行连接 例如：张三|李四....,
+            string[] str = {"张三","李四","王五","张麻子"};
+            string strs="";
+            for (int i = 0; i < str.Length-1; i++) {
+                strs = strs+str[i] + "|";
             }
-            Console.WriteLine("nums数组的最大值为：{0}最小值为：{1}，平均值为：{2}",max,min,sum/nums.Length);
+            Console.WriteLine("{0}",strs+str[str.Length-1]);
             Console.ReadKey();
         }
         /// <summary>
