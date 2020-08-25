@@ -19,6 +19,16 @@ namespace CsharpBase
          two,
         three
     }
+    //声明一个结构体
+    /// <summary>
+    /// 
+    /// </summary>
+    public struct Person
+    {
+        public string _name;//成员-字段，字段一般以下划线开头_
+        public string _age;
+        public string _student;
+    }
     class Program
     {
         static void Main(string[] args)
@@ -172,25 +182,25 @@ namespace CsharpBase
             //Console.WriteLine("你的性别是{0}",g);
             //Console.ReadKey();
             //枚举类型默认可以转换为int类型
-            state s = state.one;
-            int c = (int)s;
-            Console.WriteLine("{0}",c);
-            Console.ReadKey();
-            //int类型转换为枚举类型
-            int t = 2;
-            state t1 = (state)t;
-            Console.WriteLine("{0}",t1);
-            Console.ReadKey();
-            //所有类型都能转换为string类型
-            #region 枚举类型转换成字符串
-            string cc = s.ToString();
-            Console.WriteLine("{0}",cc);
-            Console.ReadKey();
-            #endregion
-            #region 字符串转换为枚举类型
-            string rr = "0";
-            state dd = (state)Enum.Parse(typeof(state),rr);
-            #endregion
+            //state s = state.one;
+            //int c = (int)s;
+            //Console.WriteLine("{0}",c);
+            //Console.ReadKey();
+            ////int类型转换为枚举类型
+            //int t = 2;
+            //state t1 = (state)t;
+            //Console.WriteLine("{0}",t1);
+            //Console.ReadKey();
+            ////所有类型都能转换为string类型
+            //#region 枚举类型转换成字符串
+            //string cc = s.ToString();
+            //Console.WriteLine("{0}",cc);
+            //Console.ReadKey();
+            //#endregion
+            //#region 字符串转换为枚举类型
+            //string rr = "0";
+            //state dd = (state)Enum.Parse(typeof(state),rr);
+            //#endregion
             //枚举类型默认和 int类型兼容，所以可以通过强制类型转换进行互相转换，
             //当转换一个枚举中没有的值的时候，不会抛出异常，而是直接将数字显示出来
             //枚举同样可以和string类型进行互相转换，如果将枚举类型转换为string类型，则直接调用ToString()
@@ -199,22 +209,49 @@ namespace CsharpBase
             //如果要转换的字符串是数字，则就算枚举中没有，也不会抛异常。
             //如果转换的字符串是文本，如果枚举中没有则会抛出异常
             //使用枚举类型实现接受用户输入的数字，输入枚举的英文字符
-            Console.WriteLine("请输入：1--one  ,2--two ,3-three");
-           string input= Console.ReadLine();
-            switch(input){
-                case "1": state s1 = (state)Enum.Parse(typeof(state),input);
-                        Console.WriteLine("{0}",s1);
-                        Console.ReadKey();
-                         break;
-                case "2": state s2 = (state)Enum.Parse(typeof(state), input);
-                     Console.WriteLine("{0}",s2);
-                        Console.ReadKey();
-                         break;
-                case "3": state s3 = (state)Enum.Parse(typeof(state), input);
-                     Console.WriteLine("{0}",s3);
-                        Console.ReadKey();
-                         break;
+           // Console.WriteLine("请输入：1--one  ,2--two ,3-three");
+           //string input= Console.ReadLine();
+           // switch(input){
+           //     case "1": state s1 = (state)Enum.Parse(typeof(state),input);
+           //             Console.WriteLine("{0}",s1);
+           //             Console.ReadKey();
+           //              break;
+           //     case "2": state s2 = (state)Enum.Parse(typeof(state), input);
+           //          Console.WriteLine("{0}",s2);
+           //             Console.ReadKey();
+           //              break;
+           //     case "3": state s3 = (state)Enum.Parse(typeof(state), input);
+           //          Console.WriteLine("{0}",s3);
+           //             Console.ReadKey();
+           //              break;
+           // }
+            ////数组得使用
+            //int[] nums = new int[10];
+            ////通过循环给数组赋值
+            //for (int i = 0; i < nums.Length; i++) {
+            //    nums[i] = i;
+            //}
+            ////输入数组得值
+            //for (int i = 0; i < nums.Length; i++) {
+            //    Console.WriteLine("{0}",nums[i]);
+            //}
+            //Console.ReadKey();
+            //定义一个数组，找出数组中得最大值了最小值，以及平均值
+            int[] nums = { 1, 2, 2, 20, 16, 17, 33, 17, 3, 9, 8, 10 };
+            int max = nums[0];
+            int min = nums[0];
+            int sum = 0;
+            for (int i = 0; i < nums.Length; i++) {
+                if (nums[i] > max) {
+                    max = nums[i];
+                }
+                if (nums[i] < min) {
+                    min = nums[i];
+                }
+                sum = sum + nums[i];
             }
+            Console.WriteLine("nums数组的最大值为：{0}最小值为：{1}，平均值为：{2}",max,min,sum/nums.Length);
+            Console.ReadKey();
         }
         /// <summary>
         /// 返回整型数组中的最大值
