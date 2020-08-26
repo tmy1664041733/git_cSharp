@@ -7,3 +7,5 @@ C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozu
 C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\obj\Debug\zengshangaicaozuo.csproj.GenerateResource.Cache
 C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\obj\Debug\zengshangaicaozuo.exe
 C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\obj\Debug\zengshangaicaozuo.pdb
+C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\obj\Debug\zengshangaicaozuo.login.resources
+C:\gitrepository\git_cSharp\zengshangaicaozuo\zengshangaicaozuo\zengshangaicaozuo\obj\Debug\zengshangaicaozuo.Register.resources
