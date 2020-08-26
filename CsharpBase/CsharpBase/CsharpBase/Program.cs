@@ -253,12 +253,25 @@ namespace CsharpBase
             //Console.WriteLine("nums数组的最大值为：{0}最小值为：{1}，平均值为：{2}",max,min,sum/nums.Length);
             //Console.ReadKey();
             //给出一个字符串数组，使用|进行连接 例如：张三|李四....,
-            string[] str = {"张三","李四","王五","张麻子"};
-            string strs="";
-            for (int i = 0; i < str.Length-1; i++) {
-                strs = strs+str[i] + "|";
+            //string[] str = {"张三","李四","王五","张麻子"};
+            //string strs="";
+            //for (int i = 0; i < str.Length-1; i++) {
+            //    strs = strs+str[i] + "|";
+            //}
+            //Console.WriteLine("{0}",strs+str[str.Length-1]);
+            //Console.ReadKey();
+            //将一个字符串元素的数组顺序进行反转{“我”，“是”，“好人”}{“好人”,"是"，“我”}
+            string[] str_wz = { "我","是","好人"};
+            //
+            for (int i = 0; i < str_wz.Length / 2; i++)
+            {
+                string temp = str_wz[i];
+                str_wz[i] = str_wz[str_wz.Length - 1 - i];
+                str_wz[str_wz.Length - 1 - i] = temp;
             }
-            Console.WriteLine("{0}",strs+str[str.Length-1]);
+            for (int i = 0; i < str_wz.Length; i++) {
+                Console.WriteLine("{0}",str_wz[i]);      
+            }
             Console.ReadKey();
         }
         /// <summary>
