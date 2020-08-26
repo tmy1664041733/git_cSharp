@@ -261,18 +261,48 @@ namespace CsharpBase
             //Console.WriteLine("{0}",strs+str[str.Length-1]);
             //Console.ReadKey();
             //将一个字符串元素的数组顺序进行反转{“我”，“是”，“好人”}{“好人”,"是"，“我”}
-            string[] str_wz = { "我","是","好人"};
-            //
-            for (int i = 0; i < str_wz.Length / 2; i++)
-            {
-                string temp = str_wz[i];
-                str_wz[i] = str_wz[str_wz.Length - 1 - i];
-                str_wz[str_wz.Length - 1 - i] = temp;
+            //string[] str_wz = { "我","是","好人"};
+            ////
+            //for (int i = 0; i < str_wz.Length / 2; i++)
+            //{
+            //    string temp = str_wz[i];
+            //    str_wz[i] = str_wz[str_wz.Length - 1 - i];
+            //    str_wz[str_wz.Length - 1 - i] = temp;
+            //}
+            //for (int i = 0; i < str_wz.Length; i++) {
+            //    Console.WriteLine("{0}",str_wz[i]);      
+            //}
+            //Console.ReadKey();
+            //冒泡排序  对一个数组按照从小到大或者从大到小进行排序
+            //进行一个升序排列
+            //第一次比较：8 7 6 5 4 3 2 1 0 9 循环9次  0  num.Length-1-0
+            //第二次比较：7 6 5 4 3 2 1 0 8 9 循环8次  1  num.Length-1-1
+            //第三次比较  6 5 4 3 2 1 0 7 8 9 循环7次  2  num.Length-1-2
+            //第四次比较：5 4 3 2 1 0 6 7 8 9 循环6次
+            //第五次比较  4 3 2 1 0 5 6 7 8 9 循环5次
+            //第六次比较：3 2 1 0 4 5 6 7 8 9 循环4次
+            //第七次比较：2 1 0 3 4 5 6 7 8 9 循环3次
+            //第八次比较：1 0 2 3 4 5 6 7 8 9 循环2次
+            //第九次比较：0 1 2 3 4 5 6 7 8 9 循环1次
+            int[] num = {9,8,7,6,5,4,3,2,1,0 };
+            for (int i = 0; i < num.Length - 1; i++) {
+                for (int j = 0; j < num.Length - 1 - i; j++) {
+                    if (num[j] > num[j+1]) {
+                        int temp;
+                        temp = num[j];
+                        num[j] = num[j + 1];
+                        num[j + 1] = temp;
+                    }
+                }
+                
             }
-            for (int i = 0; i < str_wz.Length; i++) {
-                Console.WriteLine("{0}",str_wz[i]);      
+            //循环输出冒泡排序后的数组
+            for (int s = 0; s < num.Length; s++)
+            {
+                Console.WriteLine("{0}", num[s]);
             }
             Console.ReadKey();
+
         }
         /// <summary>
         /// 返回整型数组中的最大值
